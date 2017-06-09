@@ -1,4 +1,4 @@
-# SlimGIS MapKit Basic Samples for WPF
+# Feature Samples for WPF Map Kit
 
 In the [previous thread](https://www.slimgis.com/developers/getting-started-wpf), we guided you to walk through a simple quick start sample of SlimGIS MapKit for WPF. In this thread, we will show you more features. Here is a preview of our samples.
 
@@ -54,7 +54,7 @@ Happy Mapping!
 
 - [Source code](https://github.com/SlimGIS/QuickstartSampleForWPF)
 - [Installation guide](http://www.slimgis.com/developers/installation)
-- [WPF quick start](https://www.slimgis.com/developers/getting-started-wpf)
+- [WPF getting start](https://www.slimgis.com/developers/getting-started-wpf)
 - [WPF feature list](https://www.slimgis.com/developers/features-overview-wpf)
 - [WPF API reference](https://www.slimgis.com/developers/api-ref-wpf)
 

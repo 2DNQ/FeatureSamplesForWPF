@@ -1,6 +1,6 @@
 # SlimGIS MapKit Basic Samples for WPF
 
-In the [previous thread](https://github.com/SlimGIS/QuickstartSampleForWPF), we guided you to walk through a simple quick start sample of SlimGIS MapKit for WPF. In this thread, we will show you more features. Here is a preview of our samples.
+In the [previous thread](https://www.slimgis.com/developers/getting-started-wpf), we guided you to walk through a simple quick start sample of SlimGIS MapKit for WPF. In this thread, we will show you more features. Here is a preview of our samples.
 
 > This project already includes the runtime license. If your trial license is expired, it still can run the project by "ctrl + F5". Or [try executable](https://github.com/SlimGIS/FeatureSamplesForWPF/releases). 
 
@@ -47,3 +47,14 @@ Styles and renderers are the objects that are used to render the spatial data. W
 In this part, we will show you more specific features that only WPF owns. We have many build-in features like popup, marker, manipulation, track & editi, map controls and more. Take a tour here.
 
 ![wpf-spec-clip-overlay](http://p1.bqimg.com/567571/af8291765fc15b19.png)
+
+Happy Mapping!
+
+### Related Resources
+
+- [Source code](https://github.com/SlimGIS/QuickstartSampleForWPF)
+- [Installation guide](http://www.slimgis.com/developers/installation)
+- [WPF quick start](https://www.slimgis.com/developers/getting-started-wpf)
+- [WPF feature list](https://www.slimgis.com/developers/features-overview-wpf)
+- [WPF API reference](https://www.slimgis.com/developers/api-ref-wpf)
+

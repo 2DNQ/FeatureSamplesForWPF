@@ -1,6 +1,8 @@
-# Feature Samples for WPF Map Kit
+Keywords: wpf map control, gis analysis, interactive map, build map
 
-In the [previous thread](https://www.slimgis.com/developers/getting-started-wpf), we guided you to walk through a simple quick start sample of SlimGIS MapKit for WPF. In this thread, we will show you more features. Here is a preview of our samples.
+# Feature Samples for WPF Map Control
+
+In the [previous thread](https://www.slimgis.com/developers/getting-started-wpf), we guided you to walk through a simple quick start sample of SlimGIS WPF Map UI Control. In this thread, we will show you more features. Here is a preview of our samples.
 
 > This project already includes the runtime license. If your trial license is expired, it still can run the project by "ctrl + F5". Or [try executable](https://github.com/SlimGIS/FeatureSamplesForWPF/releases). 
 
@@ -11,7 +13,7 @@ In the basic samples, we will show you 6 kinds of features.
 1. Geometry
 2. Layers
 3. Projection
-4. Spatial Functions
+4. GIS Analysis
 5. Style and Renderer
 6. Wpf Specific
 
@@ -33,7 +35,7 @@ A map projection is one of many methods used to represent the 3-dimensional surf
 
 ![wpf-pojection-2163](https://raw.githubusercontent.com/SlimGIS/FeatureSamplesForWPF/master/Screenshots/wpf-pojection-2163.PNG)
 
-## Spatial Functions
+## GIS Analysis
 Spatial data refers to information about the location and shape of, and relationships among, geographic features, usually stored as coordinates and topology. Spatial data functions are used to transform spatial data files, such as digitized map, edit them, and assess their accuracy. This category will represent you part of the spatial analysis functions we have.
 
 ![wpf-spatialfunc-intersect](https://raw.githubusercontent.com/SlimGIS/FeatureSamplesForWPF/master/Screenshots/wpf-spatialfunc-intersect.PNG)
@@ -44,7 +46,7 @@ Styles and renderers are the objects that are used to render the spatial data. W
 ![wpf-style-heat](https://raw.githubusercontent.com/SlimGIS/FeatureSamplesForWPF/master/Screenshots/wpf-style-heat.PNG)
 
 ## WPF Specific
-In this part, we will show you more specific features that only WPF owns. We have many build-in features like popup, marker, manipulation, track & editi, map controls and more. Take a tour here.
+In this part, we will show you more specific features that only WPF owns. We have many build-in features like popup, marker, manipulation, track & editi, map controls and more. With those features, you can quickly build your own interactive map.
 
 ![wpf-spec-clip-overlay](https://raw.githubusercontent.com/SlimGIS/FeatureSamplesForWPF/master/Screenshots/wpf-spec-clip-overlay.PNG)
 

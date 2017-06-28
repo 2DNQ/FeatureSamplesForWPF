@@ -56,7 +56,7 @@ Happy Mapping!
 
 - [Source code](https://github.com/SlimGIS/QuickstartSampleForWPF)
 - [Installation guide](http://www.slimgis.com/developers/installation)
-- [WPF getting start](https://www.slimgis.com/developers/getting-started-wpf)
-- [WPF feature list](https://www.slimgis.com/developers/features-overview-wpf)
-- [WPF API reference](https://www.slimgis.com/developers/api-ref-wpf)
+- [Getting started](https://www.slimgis.com/developers/getting-started-wpf)
+- [Features overview](https://www.slimgis.com/developers/features-overview-wpf)
+- [API reference](https://www.slimgis.com/developers/api-ref-wpf)
 

@@ -1,8 +1,8 @@
-Keywords: wpf map control, gis analysis, interactive map, build map
+Keywords: wpf map control, gis analysis, interactive map, build map, gis apps
 
 # Feature Samples for WPF Map Control
 
-In the [previous thread](https://www.slimgis.com/developers/getting-started-wpf), we guided you to walk through a simple quick start sample of SlimGIS WPF Map UI Control. In this thread, we will show you more features. Here is a preview of our samples.
+In this thread, we show you separate functions samples. You could find something useful for your GIS apps. Here is a preview of our samples.
 
 > This project already includes the runtime license. If your trial license is expired, it still can run the project by "ctrl + F5". Or [try executable](https://github.com/SlimGIS/FeatureSamplesForWPF/releases). 
 
@@ -55,8 +55,8 @@ Happy Mapping!
 ### Related Resources
 
 - [Source code](https://github.com/SlimGIS/QuickstartSampleForWPF)
-- [Installation guide](http://www.slimgis.com/developers/installation)
-- [Getting started](https://www.slimgis.com/developers/getting-started-wpf)
-- [Features overview](https://www.slimgis.com/developers/features-overview-wpf)
-- [API reference](https://www.slimgis.com/developers/api-ref-wpf)
+- [Installation guide](http://www.slimgis.com/documents/installation)
+- [Getting started](https://www.slimgis.com/documents/getting-started-wpf)
+- [Features overview](https://www.slimgis.com/documents/features-overview-wpf)
+- [API reference](https://www.slimgis.com/documents/api-ref-wpf)
 

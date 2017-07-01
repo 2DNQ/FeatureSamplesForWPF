@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -15,6 +15,8 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,8 +38,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SGMapKit.Core, Version=3.0.6.0, Culture=neutral, PublicKeyToken=77c845dea9a04899, processorArchitecture=MSIL">
-      <HintPath>..\packages\SGMapKit.Core.3.0.6\lib\net40\SGMapKit.Core.dll</HintPath>
+    <Reference Include="SGMapKit.Core, Version=3.0.7.0, Culture=neutral, PublicKeyToken=77c845dea9a04899, processorArchitecture=MSIL">
+      <HintPath>..\packages\SGMapKit.Core.3.0.7\lib\net40\SGMapKit.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SGMapKit.Wpf, Version=3.0.7.0, Culture=neutral, PublicKeyToken=77c845dea9a04899, processorArchitecture=MSIL">
+      <HintPath>..\packages\SGMapKit.Wpf.3.0.7\lib\net45\SGMapKit.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="SGMapKitEx.Sqlite, Version=3.0.7.0, Culture=neutral, PublicKeyToken=77c845dea9a04899, processorArchitecture=MSIL">
+      <HintPath>..\packages\SGMapKitEx.Sqlite.3.0.7\lib\net40\SGMapKitEx.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="SGShareKit.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SGShareKit.Wpf.1.0.3\lib\net40\SGShareKit.Wpf.dll</HintPath>
@@ -46,6 +54,10 @@
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.105.2\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -64,6 +76,180 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Samples\Advanced\SampleModel.cs" />
+    <Compile Include="Samples\Advanced\SampleTemplate.cs" />
+    <Compile Include="Samples\Geometry\GeometrySampleCategory.cs" />
+    <Compile Include="Samples\Geometry\Samples\CreateGeometryView.xaml.cs">
+      <DependentUpon>CreateGeometryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Geometry\Samples\GetAreaView.xaml.cs">
+      <DependentUpon>GetAreaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Geometry\Samples\GetGreatCircleView.xaml.cs">
+      <DependentUpon>GetGreatCircleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Geometry\Samples\GetLengthView.xaml.cs">
+      <DependentUpon>GetLengthView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Geometry\Samples\GetLineOnALineView.xaml.cs">
+      <DependentUpon>GetLineOnALineView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Geometry\Samples\GetPointOnALineView.xaml.cs">
+      <DependentUpon>GetPointOnALineView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Geometry\Samples\GetWellKnownDataView.xaml.cs">
+      <DependentUpon>GetWellKnownDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\LayerSampleCategory.cs" />
+    <Compile Include="Samples\Layer\Samples\BingMapsLayerView.xaml.cs">
+      <DependentUpon>BingMapsLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\GeoImageLayerView.xaml.cs">
+      <DependentUpon>GeoImageLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\GoogleMapsLayerView.xaml.cs">
+      <DependentUpon>GoogleMapsLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\GridLayerView.xaml.cs">
+      <DependentUpon>GridLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\MemoryLayerView.xaml.cs">
+      <DependentUpon>MemoryLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\OpenStreetMapLayerView.xaml.cs">
+      <DependentUpon>OpenStreetMapLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\PostgreSqlLayerView.xaml.cs">
+      <DependentUpon>PostgreSqlLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\ShapefileLayerView.xaml.cs">
+      <DependentUpon>ShapefileLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\SqliteLayerView.xaml.cs">
+      <DependentUpon>SqliteLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\StamenMapLayerView.xaml.cs">
+      <DependentUpon>StamenMapLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Layer\Samples\WmsLayerView.xaml.cs">
+      <DependentUpon>WmsLayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Projection\ProjectionSampleCategory.cs" />
+    <Compile Include="Samples\Projection\Samples\UseEPSGProjectionView.xaml.cs">
+      <DependentUpon>UseEPSGProjectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Projection\Samples\UseGoogleProjectionView.xaml.cs">
+      <DependentUpon>UseGoogleProjectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Projection\Samples\UseMollweideProjectionView.xaml.cs">
+      <DependentUpon>UseMollweideProjectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\BufferGeometryView.xaml.cs">
+      <DependentUpon>BufferGeometryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\FindClosestPointView.xaml.cs">
+      <DependentUpon>FindClosestPointView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\GetBoundAndCenter.xaml.cs">
+      <DependentUpon>GetBoundAndCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\GetConvexHullView.xaml.cs">
+      <DependentUpon>GetConvexHullView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\GetCrossingPointsView.xaml.cs">
+      <DependentUpon>GetCrossingPointsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\GetDifferenceView.xaml.cs">
+      <DependentUpon>GetDifferenceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\GetDistanceView.xaml.cs">
+      <DependentUpon>GetDistanceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\GetIntersectionView.xaml.cs">
+      <DependentUpon>GetIntersectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\GetShortestLineView.xaml.cs">
+      <DependentUpon>GetShortestLineView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\GetUnionView.xaml.cs">
+      <DependentUpon>GetUnionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\SpatialQueryView.xaml.cs">
+      <DependentUpon>SpatialQueryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\Samples\TransformAGeometryView.xaml.cs">
+      <DependentUpon>TransformAGeometryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\SpatialFunc\SpatialFuncSampleCategory.cs" />
+    <Compile Include="Samples\Style\Samples\UI\CharView.xaml.cs">
+      <DependentUpon>CharView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\Samples\UI\IntToCharConverter.cs" />
+    <Compile Include="Samples\Style\Samples\UI\LegendView.xaml.cs">
+      <DependentUpon>LegendView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\Samples\UI\LegendViewItem.cs" />
+    <Compile Include="Samples\Style\Samples\UI\StringToMediaFontFamilyConverter.cs" />
+    <Compile Include="Samples\Style\Samples\UseCharStyleView.xaml.cs">
+      <DependentUpon>UseCharStyleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\Samples\UseClassBreakStyleView.xaml.cs">
+      <DependentUpon>UseClassBreakStyleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\Samples\UseFillStyleView.xaml.cs">
+      <DependentUpon>UseFillStyleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\Samples\UseHeatStyleView.xaml.cs">
+      <DependentUpon>UseHeatStyleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\Samples\UseLabelStyleView.xaml.cs">
+      <DependentUpon>UseLabelStyleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\Samples\UseLineStyleView.xaml.cs">
+      <DependentUpon>UseLineStyleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\Samples\UsePointStyleView.xaml.cs">
+      <DependentUpon>UsePointStyleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\Samples\UseValueStyleView.xaml.cs">
+      <DependentUpon>UseValueStyleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Style\StyleSampleCategory.cs" />
+    <Compile Include="Samples\WpfSpecific\Samples\ClipOverlaysView.xaml.cs">
+      <DependentUpon>ClipOverlaysView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\DrawGeometryView.xaml.cs">
+      <DependentUpon>DrawGeometryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\EditGeometryView.xaml.cs">
+      <DependentUpon>EditGeometryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\PopupContentView.xaml.cs">
+      <DependentUpon>PopupContentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\PopupPromptUserControl.xaml.cs">
+      <DependentUpon>PopupPromptUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\RotateMapView.xaml.cs">
+      <DependentUpon>RotateMapView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\SwitchOverlaysView.xaml.cs">
+      <DependentUpon>SwitchOverlaysView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\UseBuildInToolsView.xaml.cs">
+      <DependentUpon>UseBuildInToolsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\UseMarkersView.xaml.cs">
+      <DependentUpon>UseMarkersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\UseOverlaysView.xaml.cs">
+      <DependentUpon>UseOverlaysView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\Samples\UsePopupView.xaml.cs">
+      <DependentUpon>UsePopupView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\WpfSpecific\ViewModels\OverlayViewModel.cs" />
+    <Compile Include="Samples\WpfSpecific\WpfSpecificSampleCategory.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,6 +263,226 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Samples\Geometry\Samples\CreateGeometryView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Geometry\Samples\GetAreaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Geometry\Samples\GetGreatCircleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Geometry\Samples\GetLengthView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Geometry\Samples\GetLineOnALineView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Geometry\Samples\GetPointOnALineView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Geometry\Samples\GetWellKnownDataView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\BingMapsLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\GeoImageLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\GoogleMapsLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\GridLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\MemoryLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\OpenStreetMapLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\PostgreSqlLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\ShapefileLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\SqliteLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\StamenMapLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Layer\Samples\WmsLayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Projection\Samples\UseEPSGProjectionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Projection\Samples\UseGoogleProjectionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Projection\Samples\UseMollweideProjectionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\BufferGeometryView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\FindClosestPointView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\GetBoundAndCenter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\GetConvexHullView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\GetCrossingPointsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\GetDifferenceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\GetDistanceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\GetIntersectionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\GetShortestLineView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\GetUnionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\SpatialQueryView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\SpatialFunc\Samples\TransformAGeometryView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UI\CharView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UI\LegendView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UseCharStyleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UseClassBreakStyleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UseFillStyleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UseHeatStyleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UseLabelStyleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UseLineStyleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UsePointStyleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\Style\Samples\UseValueStyleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\ClipOverlaysView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\DrawGeometryView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\EditGeometryView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\PopupContentView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\PopupPromptUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\RotateMapView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\SwitchOverlaysView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\UseBuildInToolsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\UseMarkersView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\UseOverlaysView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples\WpfSpecific\Samples\UsePopupView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -192,13 +598,42 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\WpfSampleCore\WpfSampleCore.csproj">
-      <Project>{4c764dc5-bf91-427c-82f6-31f15a10725c}</Project>
-      <Name>WpfSampleCore</Name>
-    </ProjectReference>
+    <Resource Include="Images\airplane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\6x9_icons_50.png" />
+    <Resource Include="Images\Bank.png" />
+    <Resource Include="Images\Park.png" />
+    <Resource Include="Images\Sports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Samples\Geometry\Samples.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Samples\Layer\Samples.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Samples\Projection\Samples.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Samples\SpatialFunc\Samples.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Samples\Style\Samples.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Samples\WpfSpecific\Samples.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net45\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.105.2\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

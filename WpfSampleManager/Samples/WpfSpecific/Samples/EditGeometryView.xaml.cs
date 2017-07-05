@@ -1,5 +1,4 @@
 ﻿using SlimGis.MapKit.Geometries;
-using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -19,7 +18,7 @@ namespace SlimGis.Samples
 
             GeoBound bound = (GeoBound)Map1.MaxBound.Clone();
             bound.ScaleDown(60);
-            Map1.Behaviors.EditBehavior.EditingFeatures.Add(new Feature(bound));
+            Map1.Behaviors.EditBehavior.Features.Add(new Feature(bound));
 
             Map1.ZoomToFullBound();
         }

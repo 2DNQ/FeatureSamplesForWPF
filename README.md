@@ -1,8 +1,8 @@
-Keywords: wpf map control, gis analysis, map sample, heat map
+Keywords: wpf map, map sample, heat map, gis mapping software, mapping software
 
 # Feature Samples for WPF Map Control
 
-<desc>This page is going to show you the WPF map samples that are categorized by function. You will find interesting and useful samples to integrate into your own GIS apps. Here is a preview of our samples.</desc>
+<desc>This page is going to show you the WPF map samples that are categorized by function. You will find interesting and useful samples to integrate into your own GIS mapping software.</desc> Here is a preview of our samples.
 
 > This project already includes the runtime license. If your trial license is expired, it still can run the project by "ctrl + F5". Or [try executable](https://github.com/SlimGIS/FeatureSamplesForWPF/releases). 
 

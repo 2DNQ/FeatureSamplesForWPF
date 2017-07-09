@@ -1,8 +1,8 @@
-Keywords: wpf map control, gis analysis, interactive map, build map, gis apps
+Keywords: wpf map control, gis analysis, map sample
 
 # Feature Samples for WPF Map Control
 
-In this thread, we show you separate functions samples. You could find something useful for your GIS apps. Here is a preview of our samples.
+<desc>This page is going to show you the WPF map samples that are categorized by function. You will find interesting and useful samples to integrate into your own GIS apps. Here is a preview of our samples.</desc>
 
 > This project already includes the runtime license. If your trial license is expired, it still can run the project by "ctrl + F5". Or [try executable](https://github.com/SlimGIS/FeatureSamplesForWPF/releases). 
 

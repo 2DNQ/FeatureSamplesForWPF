@@ -1,4 +1,4 @@
-Keywords: wpf map control, gis analysis, map sample
+Keywords: wpf map control, gis analysis, map sample, heat map
 
 # Feature Samples for WPF Map Control
 
@@ -41,7 +41,7 @@ Spatial data refers to information about the location and shape of, and relation
 ![wpf-spatialfunc-intersect](https://raw.githubusercontent.com/SlimGIS/FeatureSamplesForWPF/master/Screenshots/wpf-spatialfunc-intersect.PNG)
 
 ## Style and Renderers
-Styles and renderers are the objects that are used to render the spatial data. With SlimGIS MapKit styles and renderers, we can easily add styles for area, linear and points; also more advanced thematic styles and heat styles.
+Styles and renderers are the objects that are used to render the spatial data. With SlimGIS MapKit styles and renderers, we can easily add styles for area, linear and points; also more advanced thematic styles and use heat style to create a heat map.
 
 ![wpf-style-heat](https://raw.githubusercontent.com/SlimGIS/FeatureSamplesForWPF/master/Screenshots/wpf-style-heat.PNG)
 
